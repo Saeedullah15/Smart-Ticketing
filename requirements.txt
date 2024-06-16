@@ -1,0 +1,31 @@
+main
+1. navbar section
+2. banner section, clicking on buy tickets will take to ph-paribahan section
+3. best offers section
+4. ph-paribahan section:
+	a) when selecting a seat:
+		a) seat color will change to green
+		b) seat count will increase in select your seat
+		c) seat count will decrease in 40 seats left 
+		d) seat name, class, price will append in the select your seat list
+		e) total price, grand total will count and show
+	b) next button will be disabled initially, it will enable when:
+		a) atleast 1 seat will be selected
+		b) atleast phone number will be given
+		c) clicking on next button will show a success modal 
+
+bonus
+1. apply button will be disabled initially, it will enable when:
+	a) someone buys 4 tickets at a time
+	b) if coupon is applied and apply button is clicked, discounted price will be showed 	   by a text below total price and grand total will be caculated
+	c) if right coupon is inserted and applied, coupon part will be vanished
+	d) if wrong coupon is inserted, a alert message will be given
+2. one can not select 1 seat more than once
+3. one can not buy more than 4 tickets
+
+optional
+1. footer section
+2. stat part of banner section
+3. mobile responsive (optional but highly recommended)
+
+
