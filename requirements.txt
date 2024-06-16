@@ -1,7 +1,7 @@
 main
-1. navbar section
-2. banner section, clicking on buy tickets will take to ph-paribahan section
-3. best offers section
+1. navbar section | done
+2. banner section, clicking on buy tickets will take to ph-paribahan section | done
+3. best offers section | 
 4. ph-paribahan section:
 	a) when selecting a seat:
 		a) seat color will change to green
@@ -24,8 +24,8 @@ bonus
 3. one can not buy more than 4 tickets
 
 optional
-1. footer section
-2. stat part of banner section
+1. footer section | done
+2. stat part of banner section | done
 3. mobile responsive (optional but highly recommended)
 
 
