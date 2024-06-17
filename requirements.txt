@@ -1,7 +1,7 @@
 main
 1. navbar section | done
 2. banner section, clicking on buy tickets will take to ph-paribahan section | done
-3. best offers section | 
+3. best offers section | done
 4. ph-paribahan section:
 	a) when selecting a seat:
 		a) seat color will change to green
