@@ -229,8 +229,254 @@
                 </div>
 
                 <!-- 2nd part -->
-                <div>
+                <div class="bg-white rounded-3xl p-6 mt-5 grid grid-cols-3">
+                    <!-- left div -->
+                    <div class="col-span-2 border-r-2 border-[#0307124D] border-dashed pr-6">
+                        <h4 class="text-black font-bold text-base">Select Your Seat</h4>
+                        <!-- seat reservation instruction div -->
+                        <div class="flex justify-between items-center border-y-2 border-dashed py-2 mt-5">
+                            <div class="flex gap-3 items-center">
+                                <img src="images/seat-gray.png" alt="">
+                                <p class="font-bold text-base text-[#03071280]">Available</p>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <img src="images/seat-green-filled.png" alt="">
+                                <p class="font-bold text-base text-green">Selected</p>
+                            </div>
+                        </div>
+                        <!-- steering div -->
+                        <div class="flex justify-end">
+                            <div class="bg-[#0307121A] rounded-xl py-3 px-7 my-5 inline-block">
+                                <svg width="22.000000" height="22.000000" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M1.91 17.59C2.51 19.04 3.4 20.37 4.51 21.48C5.62 22.59 6.95 23.48 8.4 24.08C9.86 24.68 11.42 25 13 25C14.57 25 16.13 24.68 17.59 24.08C19.04 23.48 20.37 22.59 21.48 21.48C22.59 20.37 23.48 19.04 24.08 17.59C24.68 16.13 25 14.57 25 13C25 11.42 24.68 9.86 24.08 8.4C23.48 6.95 22.59 5.62 21.48 4.51C20.37 3.4 19.04 2.51 17.59 1.91C16.13 1.31 14.57 1 13 1C11.42 1 9.86 1.31 8.4 1.91C6.95 2.51 5.62 3.4 4.51 4.51C3.4 5.62 2.51 6.95 1.91 8.4C1.31 9.86 1 11.42 1 13C1 14.57 1.31 16.13 1.91 17.59ZM11.11 14.88C11.61 15.38 12.29 15.66 13 15.66C13.7 15.66 14.38 15.38 14.88 14.88C15.38 14.38 15.66 13.7 15.66 13C15.66 12.29 15.38 11.61 14.88 11.11C14.38 10.61 13.7 10.33 13 10.33C12.29 10.33 11.61 10.61 11.11 11.11C10.61 11.61 10.33 12.29 10.33 13C10.33 13.7 10.61 14.38 11.11 14.88ZM13 15.66L13 25M10.33 13L1.33 10.33M15.66 13L24.66 10.33"
+                                        stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000"
+                                        stroke-linejoin="round" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- seat plan div -->
+                        <div class="grid grid-cols-12">
+                            <div class="col-span-1 space-y-5">
+                                <p class="py-4 text-left text-[#03071280] font-bold">A</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">B</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">C</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">D</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">E</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">F</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">G</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">H</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">I</p>
+                                <p class="py-4 text-left text-[#03071280] font-bold">J</p>
+                            </div>
+                            <div class="col-span-11">
+                                <div class="grid grid-cols-2 gap-20">
+                                    <div class="grid grid-cols-2 gap-8">
+                                        <div class="space-y-5">
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                A1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                B1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                C1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                D1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                E1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                F1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                G1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                H1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                I1</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                J1</p>
+                                        </div>
+                                        <div class="space-y-5">
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                A2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                B2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                C2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                D2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                E2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                F2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                G2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                H2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                I2</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                J2</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-8">
+                                        <div class="space-y-5">
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                A3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                B3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                C3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                D3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                E3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                F3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                G3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                H3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                I3</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                J3</p>
+                                        </div>
+                                        <div class="space-y-5">
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                A4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                B4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                C4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                D4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                E4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                F4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                G4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                H4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                I4</p>
+                                            <p
+                                                class="bg-[#F7F8F8] rounded-xl p-4 text-center text-[#03071280] font-bold">
+                                                J4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right div -->
+                    <div class="col-span-1 pl-6">
+                        <h4 class="text-black font-bold text-base border-b-2 border-dashed pb-5">Select Your Seat</h4>
+                        <div class="bg-[#F7F8F8] p-5 rounded-xl mt-6">
+                            <div class="flex justify-between border-b-2 border-dashed pb-2">
+                                <div class="indicator">
+                                    <span class="indicator-item badge badge-success text-white text-xs font-bold">2
+                                    </span>
+                                    <p class="font-bold text-sm text-black mr-4">Seat</p>
+                                </div>
+                                <p class="font-bold text-sm text-black">Class</p>
+                                <p class="font-bold text-sm text-black">Price</p>
+                            </div>
+                            <div class="border-b-2 border-[#03071233]">
+                                <div class="flex justify-between my-2">
+                                    <p class="font-bold text-[#03071299] text-sm">C2</p>
+                                    <p class="font-bold text-[#03071299] text-sm">Economy</p>
+                                    <p class="font-bold text-[#03071299] text-sm">550</p>
+                                </div>
+                                <div class="flex justify-between my-2">
+                                    <p class="font-bold text-[#03071299] text-sm">C2</p>
+                                    <p class="font-bold text-[#03071299] text-sm">Economy</p>
+                                    <p class="font-bold text-[#03071299] text-sm">550</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between my-4">
+                                <p class="font-bold text-sm text-black">Total Price</p>
+                                <p class="font-bold text-sm text-black">BDT 1100</p>
+                            </div>
+                            <div class="flex">
+                                <input type="text" placeholder="Have any coupon?"
+                                    class="text-[#03071266] text-xs rounded-s-xl font-bold p-3 w-full">
+                                <button
+                                    class="text-white font-bold text-sm bg-green py-2 px-5 rounded-e-xl">Apply</button>
+                            </div>
+                            <div class="flex justify-between mt-4">
+                                <p class="font-bold text-sm text-black">Grand Total</p>
+                                <p class="font-bold text-sm text-black">BDT 1100</p>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <label for="name" class="text-black font-bold text-sm">Passenger Name*</label>
+                            <input
+                                class="w-full text-[#03071266] font-semibold p-3 mt-2 mb-5 text-xs border-[#0307121A] border rounded-xl"
+                                type="text" name="" id="name" placeholder="Enter your name">
 
+                            <label for="phone" class="text-black font-bold text-sm">Phone Number*</label>
+                            <input
+                                class="w-full text-[#03071266] font-semibold p-3 mt-2 mb-5 text-xs border-[#0307121A] border rounded-xl"
+                                type="number" name="" id="phone" placeholder="Enter your phone number">
+
+                            <label for="email" class="text-black font-bold text-sm">Email ID</label>
+                            <input
+                                class="w-full text-[#03071266] font-semibold p-3 mt-2 mb-5 text-xs border-[#0307121A] border rounded-xl"
+                                type="email" name="" id="email" placeholder="Enter your email id">
+
+                            <button
+                                class="text-white font-bold text-xs w-full bg-green py-3 mb-5 rounded-2xl">Next</button>
+
+                            <div class="flex justify-center items-center gap-10">
+                                <a href="" class="text-xs text-[#03071299] font-semibold underline">Terms and
+                                    Conditions</a>
+                                <a href="" class="text-xs text-[#03071299] font-semibold underline">Cancellation
+                                    Policy</a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
