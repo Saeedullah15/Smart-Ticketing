@@ -2,15 +2,15 @@ main
 1. navbar section | done
 2. banner section, clicking on buy tickets will take to ph-paribahan section | done
 3. best offers section | done
-4. ph-paribahan section:
-	a) when selecting a seat:
-		a) seat color will change to green
-		b) seat count will increase in select your seat
-		c) seat count will decrease in 40 seats left 
-		d) seat name, class, price will append in the select your seat list
-		e) total price, grand total will count and show
+4. ph-paribahan section: | done
+	a) when selecting a seat: | done
+		a) seat color will change to green | done
+		b) seat count will increase in select your seat | done
+		c) seat count will decrease in 40 seats left | done
+		d) seat name, class, price will append in the select your seat list | done
+		e) total price, grand total will count and show | done
 	b) next button will be disabled initially, it will enable when:
-		a) atleast 1 seat will be selected
+		a) atleast 1 seat will be selected | 
 		b) atleast phone number will be given
 		c) clicking on next button will show a success modal 
 
