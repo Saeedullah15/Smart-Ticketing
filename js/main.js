@@ -124,3 +124,8 @@ applyBtn.addEventListener("click", function () {
         alert("wrong coupon inserted!!");
     }
 })
+
+// refreshing page
+document.getElementById("continue-btn").addEventListener("click", function () {
+    location.reload();
+})
