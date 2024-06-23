@@ -1,6 +1,17 @@
 const seats = document.getElementsByClassName('seat-no');
+let seatsArray = [];
 for (const seat of seats) {
     seat.addEventListener('click', function () {
+        // removing seat duplication
+        if (!seatsArray.includes(seat)) {
+            seatsArray.push(seat);
+            console.log(seatsArray);
+        }
+        else {
+            alert("you can not select one seat more than once!");
+            return
+        }
+
         // changing seat color to green
         seat.style.backgroundColor = "#1DD100";
         seat.style.color = "white";
@@ -10,6 +21,15 @@ for (const seat of seats) {
         let seatIncreaseInNumber = parseInt(seatIncrease);
         seatIncreaseInNumber = seatIncreaseInNumber + 1;
         document.getElementById("seat-increase").innerText = seatIncreaseInNumber;
+
+        // maximum ticket buying
+        if (seatIncreaseInNumber > 4) {
+            alert("you can not select more than 4 seats!");
+            seat.style.backgroundColor = "#F7F8F8";
+            seat.style.color = "#03071280";
+            document.getElementById("seat-increase").innerText = 4;
+            return
+        }
 
         // next button enabling based on conditions
         const nextBtn = document.getElementById("next-btn");
@@ -62,6 +82,7 @@ applyBtn.addEventListener("click", function () {
     let couponInputValue = couponInput.value;
     let totalPrice = parseInt(document.getElementById("total-price").innerText);
     let grandTotal = parseInt(document.getElementById("grand-total").innerText);
+    let couponContainer = document.getElementById("coupon-container");
 
     if (couponInputValue === "NEW15") {
         let discountedPrice = totalPrice * (15 / 100);
@@ -77,6 +98,9 @@ applyBtn.addEventListener("click", function () {
 
         grandTotal = grandTotal - discountedPrice;
         document.getElementById("grand-total").innerText = grandTotal;
+
+        // hiding coupon part 
+        couponContainer.classList.add("hidden");
     }
     else if (couponInputValue === "Couple 20") {
         let discountedPrice = totalPrice * (20 / 100);
@@ -92,5 +116,11 @@ applyBtn.addEventListener("click", function () {
 
         grandTotal = grandTotal - discountedPrice;
         document.getElementById("grand-total").innerText = grandTotal;
+
+        // hiding coupon part
+        couponContainer.classList.add("hidden");
+    }
+    else {
+        alert("wrong coupon inserted!!");
     }
 })
