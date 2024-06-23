@@ -16,9 +16,9 @@ main
 
 bonus
 1. apply button will be disabled initially, it will enable when:
-	a) someone buys 4 tickets at a time
-	b) if coupon is applied and apply button is clicked, discounted price will be showed by a text below total price and grand total will be caculated
-	c) if right coupon is inserted and applied, coupon part will be vanished
+	a) someone buys 4 tickets at a time | done
+	b) if coupon is applied and apply button is clicked, discounted price will be shown by a text below total price and grand total will be caculated | done
+	c) if right coupon is inserted and applied, coupon part will be vanished | 
 	d) if wrong coupon is inserted, a alert message will be given
 2. one can not select 1 seat more than once
 3. one can not buy more than 4 tickets

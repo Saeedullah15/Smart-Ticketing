@@ -431,15 +431,18 @@
                                     <p class="font-bold text-[#03071299] text-sm">550</p>
                                 </div> -->
                             </div>
-                            <div class="flex justify-between my-4">
-                                <p class="font-bold text-sm text-black">Total Price</p>
-                                <p class="font-bold text-sm text-black">BDT <span id="total-price">00</span></p>
+                            <div id="total-price-container">
+                                <div class="flex justify-between my-4">
+                                    <p class="font-bold text-sm text-black">Total Price</p>
+                                    <p class="font-bold text-sm text-black">BDT <span id="total-price">00</span></p>
+                                </div>
                             </div>
                             <div class="flex">
-                                <input type="text" placeholder="Have any coupon?"
+                                <input id="coupon-input" type="text" placeholder="Have any coupon?"
                                     class="text-[#03071266] text-xs rounded-s-xl font-bold p-3 w-full">
-                                <button
-                                    class="text-white font-bold text-sm bg-green py-2 px-5 rounded-e-xl">Apply</button>
+                                <button id="apply-btn"
+                                    class="text-white font-bold text-sm bg-green py-2 px-5 rounded-e-xl" disabled>Apply
+                                </button>
                             </div>
                             <div class="flex justify-between mt-4">
                                 <p class="font-bold text-sm text-black">Grand Total</p>

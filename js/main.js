@@ -20,6 +20,12 @@ for (const seat of seats) {
             }
         });
 
+        // apply button enabling based on a condition
+        const applyBtn = document.getElementById("apply-btn");
+        if (seatIncreaseInNumber === 4) {
+            applyBtn.removeAttribute("disabled");
+        }
+
         // seat count decreasing
         const seatDecrease = document.getElementById("seat-decrease").innerText;
         let seatDecreaseInNumber = parseInt(seatDecrease);
@@ -40,10 +46,51 @@ for (const seat of seats) {
 
         // total price and grand total
         const seatPrice = parseInt(document.getElementById("seat-price").innerText);
-        const totalPrice = seatPrice * seatIncreaseInNumber;
+        let totalPrice = seatPrice * seatIncreaseInNumber;
         let totalPriceElement = document.getElementById("total-price");
         let grandTotalElement = document.getElementById("grand-total");
         totalPriceElement.innerText = totalPrice;
         grandTotalElement.innerText = totalPrice;
     })
 }
+
+// apply button interactions
+const couponInput = document.getElementById("coupon-input");
+const applyBtn = document.getElementById("apply-btn");
+
+applyBtn.addEventListener("click", function () {
+    let couponInputValue = couponInput.value;
+    let totalPrice = parseInt(document.getElementById("total-price").innerText);
+    let grandTotal = parseInt(document.getElementById("grand-total").innerText);
+
+    if (couponInputValue === "NEW15") {
+        let discountedPrice = totalPrice * (15 / 100);
+
+        const totalPriceContainer = document.getElementById("total-price-container");
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("flex", "justify-between", "my-4");
+        newDiv.innerHTML = `
+                    <p class="font-bold text-sm text-black">Discounted Price</p>
+                    <p class="font-bold text-sm text-black">BDT ${discountedPrice}</p>
+                `;
+        totalPriceContainer.appendChild(newDiv);
+
+        grandTotal = grandTotal - discountedPrice;
+        document.getElementById("grand-total").innerText = grandTotal;
+    }
+    else if (couponInputValue === "Couple 20") {
+        let discountedPrice = totalPrice * (20 / 100);
+
+        const totalPriceContainer = document.getElementById("total-price-container");
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("flex", "justify-between", "my-4");
+        newDiv.innerHTML = `
+                    <p class="font-bold text-sm text-black">Discounted Price</p>
+                    <p class="font-bold text-sm text-black">BDT ${discountedPrice}</p>
+                `;
+        totalPriceContainer.appendChild(newDiv);
+
+        grandTotal = grandTotal - discountedPrice;
+        document.getElementById("grand-total").innerText = grandTotal;
+    }
+})
