@@ -11,6 +11,15 @@ for (const seat of seats) {
         seatIncreaseInNumber = seatIncreaseInNumber + 1;
         document.getElementById("seat-increase").innerText = seatIncreaseInNumber;
 
+        // next button enabling based on conditions
+        const nextBtn = document.getElementById("next-btn");
+        document.getElementById("phone").addEventListener("keyup", function (e) {
+            const phoneValue = e.target.value;
+            if (seatIncreaseInNumber >= 1 && phoneValue !== "") {
+                nextBtn.removeAttribute("disabled");
+            }
+        });
+
         // seat count decreasing
         const seatDecrease = document.getElementById("seat-decrease").innerText;
         let seatDecreaseInNumber = parseInt(seatDecrease);
@@ -36,6 +45,5 @@ for (const seat of seats) {
         let grandTotalElement = document.getElementById("grand-total");
         totalPriceElement.innerText = totalPrice;
         grandTotalElement.innerText = totalPrice;
-        console.log(totalPriceElement, grandTotalElement);
     })
 }

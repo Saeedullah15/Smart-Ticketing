@@ -9,10 +9,10 @@ main
 		c) seat count will decrease in 40 seats left | done
 		d) seat name, class, price will append in the select your seat list | done
 		e) total price, grand total will count and show | done
-	b) next button will be disabled initially, it will enable when:
-		a) atleast 1 seat will be selected | 
-		b) atleast phone number will be given
-		c) clicking on next button will show a success modal 
+	b) next button will be disabled initially, it will enable when: | done
+		a) atleast 1 seat will be selected | done
+		b) atleast phone number will be given | done
+		c) clicking on next button will show a success modal | done 
 
 bonus
 1. apply button will be disabled initially, it will enable when:
